@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE genealogie SYSTEM "RoisMaudits.dtd">
+<genealogie>
+	<personnage nom="Philippe II Auguste">
+		<dates nais="1165" mort="1223"/>
+		<roi deb="1180" fin="1223"/>
+		<descendance>
+			<personnage nom="Louis VIII le lion">
+				<dates nais="1187" mort="1226"/>
+				<roi deb="1223" fin="1226"/>
+				<descendance>
+					<personnage nom="Louis IX">
+						<dates nais="1214" mort="1270"/>
+						<roi deb="1226" fin="1270"/>
+						<descendance>
+							<personnage nom="Philippe III le Hardi">
+								<dates nais="1245" mort="1285"/>
+								<roi deb="1270" fin="1285"/>
+								<descendance>
+									<personnage nom="Philippe IV le Bel">
+										<dates nais="1268" mort="1314"/>
+										<roi deb="1285" fin="1314"/>
+										<descendance>
+											<personnage nom="Louis X le Hutin">
+												<dates nais="1289" mort="1316"/>
+												<roi deb="1314" fin="1316"/>
+											</personnage>
+											<personnage nom="Philippe V le long">
+												<dates nais="1294" mort="1322"/>
+												<roi deb="1317" fin="1322"/>
+											</personnage>
+											<personnage nom="Charles IV le Bel">
+												<dates nais="1294" mort="1328"/>
+												<roi deb="1322" fin="1328"/>
+											</personnage>
+										</descendance>
+									</personnage>
+									<personnage nom="Charles">
+										<dates nais="1270" mort="1325"/>
+										<titre>Comte de Valois</titre>
+										<descendance>
+											<personnage nom="Philippe VI de Valois">
+												<dates nais="1293" mort="1350"/>
+												<roi deb="1328" fin="1350"/>
+												<descendance>
+													<personnage nom="Jean II le Bon">
+														<dates nais="1319" mort="1364"/>
+														<roi deb="1350" fin="1364"/>
+														<descendance>
+															<personnage nom="Charles V le sage">
+																<dates nais="1338" mort="1380"/>
+																<roi deb="1364" fin="1380"/>
+																<descendance>
+																	<personnage nom="Charles VI le Fou">
+																		<dates nais="1368" mort="1422"/>
+																		<roi deb="1380" fin="1422"/>
+																	</personnage>
+																	<personnage nom="Louis de France">
+																		<dates nais="1372" mort="1407"/>
+																		<titre/>
+																		<descendance>
+																			<personnage nom="Charles d'Orleans">
+																				<dates nais="1394" mort="1465"/>
+																				<titre>duc d'Orleans</titre>
+																				<descendance>
+																					<personnage nom="Louis XII">
+																						<surnom>Père du Peuple</surnom>
+																						<dates nais="1462" mort="1515"/>
+																						<roi deb="1498" fin="1515"/>
+																					</personnage>
+																				</descendance>
+																			</personnage>
+																		</descendance>
+																	</personnage>
+																</descendance>
+															</personnage>
+														</descendance>
+													</personnage>
+												</descendance>
+											</personnage>
+										</descendance>
+									</personnage>
+								</descendance>
+							</personnage>
+						</descendance>
+					</personnage>
+				</descendance>
+			</personnage>
+		</descendance>
+	</personnage>
+</genealogie>

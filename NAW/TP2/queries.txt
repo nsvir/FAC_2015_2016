@@ -1,0 +1,35 @@
+//item[type = "BD"][pages > 50]/prix
+
+//item[type = "BD"][Coloriste and Dessinateur]/titre
+
+//item[type = "BD"][contains(resume, "Far West")]/titre
+
+//item[serie]/Auteur
+
+//item[Auteur = //item[serie = "Minuscule"]/Auteur]/titre
+
+count(//item[serie = "Minuscule"])
+
+//item[serie = "Minuscule"][1]/datedeparution
+
+//item[serie="Minuscule"][position() < 3]/titre
+
+PARTIE 2
+
+//personnage[@nom = "Louis IX"]/../..
+//personnage[descendance/personnage[@nom="Louis IX"]]
+
+//personnage[@nom = "Louis IX"]/../../../..
+//personnage[descendance/personnage/descendance/personnage[@nom="Louis IX"]]
+
+//personnage[@nom = "Louis IX"]/descendance/personnage/descendance/personnage
+
+//personnage[roi[@deb < 1300 and @fin > 1300]]
+
+//personnage[@nom = "Louis X le Hutin"]/following-sibling::*
+
+//personnage[dates[@nais > 1300 and @mort < 1400]]
+
+//descendance[count(personnage) = 0]/parent::personnage
+
+//personnage[roi][not(descendance)]

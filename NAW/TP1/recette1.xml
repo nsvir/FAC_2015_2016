@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recette SYSTEM "exo2.dtd">
+<recette>
+	<nom>Oeufs à la coque</nom>
+	<portion>4</portion>
+	<preparation value="1" unit="min"/>
+	<cuisson value="3" unit="min"/>
+	<ingredients>
+		<i>
+			<nom id="ing1">oeufs</nom>
+			<nbre>4</nbre>
+		</i>
+	</ingredients>
+	<guide>
+Plongez délicatement les <renvoi ref="ing1">oeufs</renvoi> dans de l'eau portée à ébullition. Faîtes reprendre l'ébullition, puis baissez le feu et laissez cuire à petits bouillons pendant <cuisson value="3" unit="min"/> minutes. Égouttez les <renvoi ref="ing1">oeufs</renvoi>, posez-les dans des coquetiers et coupez hortizontalement la partie supérieure pour les déguster.
+  </guide>
+</recette>

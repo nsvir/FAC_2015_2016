@@ -1,0 +1,25 @@
+Autor: Nicolas Svirchevsky
+
+To run the project use the script:
+
+`./run.sh`
+
+which compiles the project and put the created jar in the current directory.
+If the TP1.jar file already exists it just run the program.
+
+A single jar covers all exercices.
+A prompt is going to ask you wich exercice you want to execute and some informations.
+
+Exercice 1
+=========
+
+1. La première étape consiste à créer la MulticastSocket puis la connecter au groupe de réseau.
+   Il suffit ensuite d'utiliser un DatagramPacket pour lire et écrire sur la socket.
+
+
+Exercice 2
+==========
+
+1. Pour créer un client émetteur et récepteur il nous faut utiliser des threads.
+
+2. Nous pouvons utiliser une Map qui contient l'adresse du destinataire et la binder avec le nom de notre choix.
