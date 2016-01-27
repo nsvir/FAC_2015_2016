@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': "Main"
+    }
+}
+
+task run(type:Exec, dependsOn:build) {
+    commandLine 'java', '-jar', './build/libs/question4.jar'
+    standardInput = System.in
+}
