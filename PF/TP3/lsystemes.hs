@@ -20,8 +20,8 @@ kochRules 'F' = ['F','-','F','+','+','F','-','F']
 kochRules '+' = ['+']
 kochRules '-' = ['-']
 
-kochSuivant = ant kochRules
-kochSuivant= motSuivant' kochRules
+kochSuivant = motSuivant kochRules
+kochSuivant' = motSuivant' kochRules
 kochSuivant'' = motSuivant'' kochRules
 
 lsysteme :: Axiome -> Regles -> LSysteme

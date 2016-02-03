@@ -18,16 +18,18 @@ type Config = (EtatTortue -- État initial de la tortue
 -- main = display (InWindow "L-système" (1000, 1000) (0, 0)) white dessin
 main = animate (InWindow "flocon" (500, 500) (0, 0)) white anim
 
-dessin = interpreteMot (((-150,0),0),100,1,pi/3,"F+-") "F+F--F+F" 
+dessin = interpreteMot aConfig "F"
 
 anim = lsystemeAnime (lsystemeKoch "F") aConfig 
 
 lsystemeAnime :: LSysteme -> Config -> Float -> Picture
-lsystemeAnime l (et, p, e, a, xs) f = (interpreteMot 
-                                        (et, p / (2 ** f), e, a, xs) 
-                                        (l !! ((round f) `mod` 4)))
+lsystemeAnime l (et, p, e, a, xs) f = interpreteMot 
+                                        (et, p , e / (2 ^ n), a, xs) 
+                                        (l !! n)
+                            where n = ((round f) `mod` 8)
+
 aConfig :: Config
-aConfig = (((0,0), 0), 100, 1, pi / 2, ['F', '+', '-'])
+aConfig =  (((-150,0),0),100,1,pi/3,"F+-")
 
 etatInitial :: Config -> EtatTortue
 etatInitial (a, _, _, _, _) = a
@@ -61,18 +63,21 @@ type EtatDessin = (EtatTortue, Path)
 etatPoint (p, _) = p
 etatPath (_, p) = p
 
+
+
 interpreteSymbole :: Config -> EtatDessin -> Symbole -> EtatDessin
-interpreteSymbole c (e, px) x = (ne, etatPoint ne:px)
+interpreteSymbole c (e, px) x = (ne, (etatPoint ne):px)
                 where ne = case x of
                          '+' -> tourneAGauche c e 
                          '-' -> tourneADroite c e
                          'F' -> avance c e 
 
-tortue :: EtatDessin
-tortue = (etatInitial aConfig,[])
+
+
 
 interpreteMot :: Config -> Mot -> Picture
-interpreteMot c m = Line (etatPath (foldl (interpreteSymbole c) tortue m))
+interpreteMot c@(et@(p, a), _,_,_,_) m = Line (etatPath 
+                                        (foldl (interpreteSymbole c) (et, [p]) m))
 
 --foldl :: (b -> a -> b) -> b -> t a -> b 
 --(a -> b -> a) [b]
