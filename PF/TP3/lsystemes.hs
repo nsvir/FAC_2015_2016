@@ -1,3 +1,5 @@
+module Lsystemes where
+
 type Symbole  = Char
 type Mot      = [Symbole]
 type Axiome   = Mot
@@ -18,8 +20,8 @@ kochRules 'F' = ['F','-','F','+','+','F','-','F']
 kochRules '+' = ['+']
 kochRules '-' = ['-']
 
-kochSuivant = motSuivant kochRules
-kochSuivant' = motSuivant' kochRules
+kochSuivant = ant kochRules
+kochSuivant= motSuivant' kochRules
 kochSuivant'' = motSuivant'' kochRules
 
 lsysteme :: Axiome -> Regles -> LSysteme

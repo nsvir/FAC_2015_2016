@@ -1,10 +1,11 @@
-type Symbole  = Char
-type Mot      = [Symbole]
-type Axiome   = Mot
-type Regles   = Symbole -> Mot
-type LSysteme = [Mot]
+module Main where
 
-type Point = (Float, Float)
+import Graphics.Gloss
+import Lsystemes
+
+
+
+--type Point = (Float, Float)
 type EtatTortue = (Point, Float)
 
 type Config = (EtatTortue -- État initial de la tortue
@@ -13,8 +14,20 @@ type Config = (EtatTortue -- État initial de la tortue
               ,Float      -- Angle pour les rotations de la tortue
               ,[Symbole]) -- Liste des symboles compris par la tortue
 
+
+-- main = display (InWindow "L-système" (1000, 1000) (0, 0)) white dessin
+main = animate (InWindow "flocon" (500, 500) (0, 0)) white anim
+
+dessin = interpreteMot (((-150,0),0),100,1,pi/3,"F+-") "F+F--F+F" 
+
+anim = lsystemeAnime (lsystemeKoch "F") aConfig 
+
+lsystemeAnime :: LSysteme -> Config -> Float -> Picture
+lsystemeAnime l (et, p, e, a, xs) f = (interpreteMot 
+                                        (et, p / (2 ** f), e, a, xs) 
+                                        (l !! ((round f) `mod` 4)))
 aConfig :: Config
-aConfig = (((0,0), pi / 4), sqrt 2, 1, pi / 2, ['F', '-', '+'])
+aConfig = (((0,0), 0), 100, 1, pi / 2, ['F', '+', '-'])
 
 etatInitial :: Config -> EtatTortue
 etatInitial (a, _, _, _, _) = a
@@ -42,3 +55,25 @@ tourneADroite (_, _, _, rot, _) (point, angle) = (point, angle - rot)
 
 filtreSymbolesTortue :: Config -> Mot -> Mot
 filtreSymbolesTortue (_,_,_,_,syms) mot = filter (`elem` syms) mot 
+
+type EtatDessin = (EtatTortue, Path)
+
+etatPoint (p, _) = p
+etatPath (_, p) = p
+
+interpreteSymbole :: Config -> EtatDessin -> Symbole -> EtatDessin
+interpreteSymbole c (e, px) x = (ne, etatPoint ne:px)
+                where ne = case x of
+                         '+' -> tourneAGauche c e 
+                         '-' -> tourneADroite c e
+                         'F' -> avance c e 
+
+tortue :: EtatDessin
+tortue = (etatInitial aConfig,[])
+
+interpreteMot :: Config -> Mot -> Picture
+interpreteMot c m = Line (etatPath (foldl (interpreteSymbole c) tortue m))
+
+--foldl :: (b -> a -> b) -> b -> t a -> b 
+--(a -> b -> a) [b]
+
