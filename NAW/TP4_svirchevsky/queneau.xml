@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE noeuds [
+	<!ELEMENT noeuds (noeud*)>
+	<!ELEMENT noeud (texte, aiguillage?)>
+	<!ELEMENT texte (#PCDATA)>
+	<!ELEMENT aiguillage (voie*)>
+	<!ELEMENT voie (condition, cible)>
+	<!ELEMENT condition (#PCDATA)>
+	<!ELEMENT cible (#PCDATA)>
+	<!ATTLIST noeud
+	numero CDATA #REQUIRED
+>
+]>
+<noeuds>
+	<noeud numero="1">
+		<texte>Désirez-vous connaître l'histoire des trois alertes petits pois ?</texte>
+		<aiguillage>
+			<voie>
+				<condition>Oui</condition>
+				<cible>4</cible>
+			</voie>
+			<voie>
+				<condition>Non</condition>
+				<cible>2</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="2">
+		<texte>Préférez-vous celle des trois minces grands échalas ?</texte>
+		<aiguillage>
+			<voie>
+				<condition>Oui</condition>
+				<cible>16</cible>
+			</voie>
+			<voie>
+				<condition>Non</condition>
+				<cible>3</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="3">
+		<texte>Préférez-vous celle des trois moyens médiocres arbustes ?</texte>
+		<aiguillage>
+			<voie>
+				<condition>Oui</condition>
+				<cible>17</cible>
+			</voie>
+			<voie>
+				<condition>Non</condition>
+				<cible>21</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="4">
+		<texte> Il y avait une fois trois petits pois vêtus de vert qui dormaient gentiment dans leur cosse. Leur visage bien rond respirait par les trous de leurs narines et l'on entendait leur ronflement doux et harmonieux.</texte>
+		<aiguillage>
+			<voie>
+				<condition>vous préférez une autre description</condition>
+				<cible>9</cible>
+			</voie>
+			<voie>
+				<condition>celle-çi vous convient</condition>
+				<cible>5</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="5">
+		<texte> Ils ne rêvaient pas. Ces petits êtres en effet ne rêvent jamais</texte>
+		<aiguillage>
+			<voie>
+				<condition>Si vous préférez qu'ils rêvent</condition>
+				<cible>6</cible>
+			</voie>
+			<voie>
+				<condition>sinon</condition>
+				<cible>7</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="6">
+		<texte>Ils rêvaient. Ces petits êtres en effet rêvent toujours et leurs nuits sécrètent des songes charmants.</texte>
+		<aiguillage>
+			<voie>
+				<condition>vous désirez connaître ces songes</condition>
+				<cible>7</cible>
+			</voie>
+			<voie>
+				<condition>vous n'y tenez pas</condition>
+				<cible>7</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="7">
+		<texte>Leurs pieds mignons trempaient dans de chaudes chaussettes et ils portaient au lit des gants de velours noir</texte>
+		<aiguillage>
+			<voie>
+				<condition>vous préférez des gants d'une autre couleur,</condition>
+				<cible>8</cible>
+			</voie>
+			<voie>
+				<condition>cette couleur vous convient</condition>
+				<cible>10</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="8">
+		<texte> Ils portaient au lit des gants de velours bleu</texte>
+		<aiguillage>
+			<voie>
+				<condition>vous préférez des gants d'une autre couleur</condition>
+				<cible>7</cible>
+			</voie>
+			<voie>
+				<condition>cette couleur vous convient</condition>
+				<cible>10</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="9">
+		<texte> Il y avait une fois trois petits pois qui roulaient leur bosse sur les grands chemins. Le soir venu, fatigués et las, ils s'endormirent très rapidement.</texte>
+		<aiguillage>
+			<voie>
+				<condition>vous désirez connaître la suite,</condition>
+				<cible>5</cible>
+			</voie>
+			<voie>
+				<condition>vous ne désirez pas connaître la suite,</condition>
+				<cible>21</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="10">
+		<texte>Tous les trois faisaient le même rêve, ils s'aimaient en effet tendrement et, en bons fiers trumeaux, songeaient toujours semblablement.</texte>
+		<aiguillage>
+			<voie>
+				<condition>vous désirez connaître leur rêve,</condition>
+				<cible>11</cible>
+			</voie>
+			<voie>
+				<condition>vous ne désirez pas connaître leur rêve,</condition>
+				<cible>12</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="11">
+		<texte>Ils rêvaient qu'ils allaient chercher leur soupe à la cantine populaire et qu'en ouvrant leur gamelle ils découvraient que c'était de la soupe d'ers. D'horreur, ils s'éveillent.</texte>
+		<aiguillage>
+			<voie>
+				<condition>Si vous voulez savoir pourquoi ils s'éveillent d'horreur, consulter le Larousse au mot "ers" </condition>
+				<cible/>
+			</voie>
+			<voie>
+				<condition>si vous jugez inutile d'approfondir la question</condition>
+				<cible>12</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+<noeud numero="12">
+	<texte>Opopoï ! s'écrient-ils en ouvrant les yeux. Opopoï ! quel songe avons-nous enfanté là ! Mauvais présage, dit le premier. Oui-da, dit le second, c'est bien vrai, me voilà triste. Ne vous troublez pas ainsi, dit le troisième qui était le plus futé, il ne s'agit pas de s'émouvoir, mais de comprendre, bref, Je m'en vais vous analyser ça.</texte>
+	<aiguillage>
+	<voie>
+		<condition>vous désirez connaître tout de suite l'interprétation de ce songe</condition>
+		<cible>15</cible>
+	</voie>
+	<voie>
+		<condition>vous souhaitez au contraire connaître les réactions des deux autres</condition>
+		<cible>13</cible>
+	</voie></aiguillage>
+</noeud>
+<noeud numero="13">
+	<texte>Tu nous la bailles belle, dit le premier. Depuis quand sais-tu analyser les songes? Oui, depuis quand ? ajouta le second.</texte>
+	<aiguillage>
+	<voie>
+		<condition>Si vous désirez aussi savoir depuis quand</condition>
+		<cible>14</cible>
+	</voie>
+	<voie>
+		<condition>sinon</condition>
+		<cible>14</cible>
+	</voie></aiguillage> 
+</noeud>
+<noeud numero="14">
+	<texte>Depuis quand? s'écria le troisième. Est-ce que je sais moi! Le fait est que je pratique la chose. Vous allez voir !</texte>
+	<aiguillage>
+	<voie>
+		<condition>vous voulez aussi voir</condition>
+		<cible>15</cible>
+	</voie>
+	<voie>
+		<condition>sinon</condition>
+		<cible>15</cible>
+	</voie></aiguillage>
+</noeud> 
+
+<noeud numero="15">
+	<texte>Eh bien! voyons, dirent ses frères. Votre ironie ne ne me plaît pas, répliqua l'autre, et vous ne saurez rien.
+D'ailleurs, au cours de cette conversation d'un ton assez vif, votre sentiment d'horreur ne s'est-il pas estompé ? effacé même? Alors à quoi bon remuer le bourbier de votre inconscient de papilionacées? Allons plutôt nous laver à la fontaine et saluer ce gai matin dans l'hygiène et la sainte euphorie! Aussitôt dit, aussitôt fait : les voilà qui se glissent hors de leur cosse, se laissent doucement rouler sur le sol et puis au petit trot gagnent joyeusement le théâtre de leurs ablutions.</texte>
+	<aiguillage>
+	<voie>
+		<condition>vous désirez savoir ce qui se passe sur le théâtre de leurs ablutions</condition>
+		<cible>16</cible>
+	</voie>
+	<voie>
+		<condition>vous ne le désirez pas</condition>
+		<cible>21</cible>
+	</voie></aiguillage>
+</noeud>
+<noeud numero="16">
+	<texte>Trois grands échalas les regardaient faire.</texte>
+	<aiguillage>
+	<voie>
+		<condition>Si les trois grands échalas vous déplaisent,</condition>
+		<cible>21</cible>
+	</voie>
+	<voie>
+		<condition>s'ils vous conviennent</condition>
+		<cible>18</cible>
+	</voie></aiguillage>
+</noeud>
+<noeud numero="17">
+	<texte>Trois moyens médiocres arbustes les regardaient faire.</texte>
+	<aiguillage>
+	<voie>
+		<condition>Si les trois moyens médiocres arbustes vous déplaisent</condition>
+		<cible>21</cible>
+	</voie>
+	<voie>
+		<condition>s'ils vous conviennent</condition>
+		<cible>18</cible>
+	</voie></aiguillage>
+</noeud>
+<noeud numero="18">
+	<texte>Se voyant ainsi zyeutés, les trois alertes petits pois qui étaient fort pudiques s'ensauvèrent.</texte>
+	<aiguillage>
+	<voie>
+		<condition>Si vous désirez savoir ce qu'ils firent ensuite</condition>
+		<cible>19</cible>
+	</voie>
+	<voie>
+		<condition>si vous ne le désirez pas</condition>
+		<cible>21</cible>
+	</voie></aiguillage>
+</noeud>
+<noeud numero="19">
+		<texte>Ils coururent bien fort pour regagner leur cosse et, refermant celle-ci derrière eux, s'y endormirent de nouveau.</texte>
+		<aiguillage>
+			<voie>
+				<condition>Vous désirez connaître la suite</condition>
+				<cible>20</cible>
+			</voie>
+			<voie>
+				<condition>Vous ne le désirez pas</condition>
+				<cible>21</cible>
+			</voie>
+		</aiguillage>
+	</noeud>
+	<noeud numero="20">
+		<texte>Il n'y a pas de suite le conte est terminé.</texte>
+	</noeud>
+	<noeud numero="21">
+		<texte>Dans ce cas, le conte est également terminé.</texte>
+	</noeud>
+</noeuds>

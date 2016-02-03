@@ -1,0 +1,404 @@
+<auteurs>
+    <auteur nom="Paul Nizan" naissance="1905" deces="1940">
+		<pays>France</pays>
+		<biographie> romancier, philosophe, et journaliste. Le 23 mai 1940, iau début de la Seconde Guerre mondiale, il est tué lors de l'offensive allemande contre Dunkerque</biographie>
+	</auteur>
+	<auteur nom="Pierre Bourdieu" naissance="1930" deces="2002">
+		<pays>France</pays>
+		<biographie>Directeur d'études à l'école des hautes études en sciences sociales, Professeur au Collège de France </biographie>
+	</auteur>
+	<auteur nom="Raymond Aron" naissance="1905" deces="1983">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Jean Baudrillard" naissance="1929" deces="2007">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Ludwig van Beethoven" naissance="1770" deces="1827">
+		<pays>Allemagne</pays>
+	</auteur>
+	<auteur nom="Honoré de Balzac" naissance="1799" deces="1850">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Léon Tolstoï" naissance="1828" deces="1910">
+		<pays>Russie</pays>
+	</auteur>
+	<auteur nom="Jean Paulhan" naissance="1884" deces="1968">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Hannah Arendt" naissance="1906" deces="1975">
+		<pays>Allemagne</pays>
+		<pays>Etats-Unis</pays>
+	</auteur>
+	<auteur nom="Talleyrand" naissance="1754" deces="1838">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Christian Bobin" naissance="1951">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Miguel de Cervantès" naissance="1547" deces="1616">
+		<pays>Espagne</pays>
+	</auteur>
+	<auteur nom="Cioran" naissance="1911" mort="1995">
+		<pays>Roumanie</pays>
+	</auteur>
+	<auteur nom="Henri Michaud" naissance="1899" deces="1984">
+		<pays>Belgique</pays>
+	</auteur>
+	<auteur nom="Henri Bergson" naissance="1859" deces="1941">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="François René de Chateaubriand" naissance="1769" deces="1848">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Gaston Bachelard" naissance="1884" deces="1962">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Anatole France" naissance="1844" deces="1924">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Albert Guinon" naissance="1863" deces="1923">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Amélie Nothomb" naissance="1966">
+		<pays>Belgique</pays>
+	</auteur>
+	<auteur nom="Henri Lacordaire" naissance="1802" deces="1861">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Marcel Achard" naissance="1899" deces="1974">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Madame de Sévigné" naissance="1626" deces="1696">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Alexis de Tocqueville" naissance="1805" deces="1859">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Léon Bloy" naissance="1846" deces="1917">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Léon Gambetta" naissance="1838" deces="1882">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Jacques Prévert" naissance="1900" deces="1977">
+		<image src="Prevert.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Guy de Maupassant" naissance="1850" deces="1893">
+		<image src="Maupassant.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Voltaire" naissance="1694" deces="1778">
+		<image src="Voltaire.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Louis Aragon" naissance="1897" deces="1982">
+		<image src="Aragon.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Frédéric Dard" naissance="1921" deces="2000">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Georges Clemenceau" naissance="1841" deces="1929">
+		<image src="Clemenceau.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Tristan Bernard" naissance="1866" deces="1947">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Alphonse de Lamartine" naissance="1790" deces="1869">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Raymond Queneau" naissance="1903" deces="1976">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Pierre-Augustin Caron Beaumarchais" naissance="1732" deces="1799">
+		<image src="Beaumarchais.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Alfred Capus" naissance="1857" deces="1922">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Herbert Hoover" naissance="1874" deces="1964">
+		<pays>Etats-Unis</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Pierre Waldeck-Rousseau" naissance="1864" deces="1904">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Edgar Allan Poe" naissance="1809" deces="1849">
+		<pays>Etats-Unis</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Mark Twain" naissance="1835" deces="1910">
+		<image src="Twain.jpg"/>
+		<pays>Etats-Unis</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="John Fitzgerald Kennedy" naissance="1917" deces="1963">
+		<pays>Etats-Unis</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Ronald Reagan" naissance="1911" deces="2004">
+		<pays>Etats-Unis</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Léonard de Vinci" naissance="1452" deces="1519">
+		<pays>italie</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Alexandre Dumas" naissance="1802" deces="1870">
+		<image src="DumasPere.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Patrick Modiano" naissance="1945">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Jean de La Bruyère" naissance="1645" deces="1696">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Sören Kierkegaard" naissance="1813" deces="1855">
+		<pays>Danemark</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Marcel Duchamp" naissance="1887" deces="1968">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="John Maynard Keynes" naissance="1883" deces="1946">
+		<pays>Angleterre</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Françoise Sagan" naissance="1935" deces="2004">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Octavio Paz" naissance="1914" deces="1998">
+		<pays>Mexique</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Johann Wolfgang von Goethe" naissance="1749" deces="1832">
+		<pays>Allemagne</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jules Barbey d Aurevilly" naissance="1808" deces="1889">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Blaise Pascal" naissance="1623" deces="1662">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Victor Hugo" naissance="1802" deces="1885">
+		<image src="Hugo.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Roland Barthes" naissance="1915" deces="1980">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="William Shakespeare" naissance="1564" deces="1616">
+		<pays>Angleterre</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Henry de Montherlant" naissance="1895" deces="1972">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jean Giono" naissance="1895" deces="1970">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jorge Luis Borges" naissance="1899" deces="1986">
+		<pays>Argentine</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Arthur Schopenhauer" naissance="1788" deces="1860">
+		<image src="Schopenhauer.jpg"/>
+		<pays>Allemagne</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Emil Michel Cioran" naissance="1911" deces="1995">
+		<pays>Roumanie</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Paul Valéry" naissance="1871" deces="1945">
+		<image src="Valery.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Charles Péguy" naissance="1873" deces="1914">
+		<image src="Peguy.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Alexandre Pouchkine" naissance="1799" deces="1837">
+		<pays>Russie</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Anton Tchekhov" naissance="1860" deces="1904">
+		<pays>Russie</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Francis Bacon" naissance="1909" deces="1992">
+		<pays>Irlande</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Montaigne" naissance="1533" deces="1592">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="René Char" naissance="1907" deces="1988">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jean Jaurès" naissance="1859" deces="1914">
+		<image src="Jaures.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Pierre Carlet de Chamblain de Marivaux" naissance="1688" deces="1763">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Henri Poincaré" naissance="1854" deces="1912">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Confucius" naissance="-551" deces="-479">
+		<pays>Chine</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Winston Churchill" naissance="1874" deces="1965">
+		<image src="Churchill.jpg"/>
+		<pays>Angleterre</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Georg Christoph Lichtenberg" naissance="1742" deces="1799">
+		<pays>Allemagne</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Ernst Jünger" naissance="1895" deces="1998">
+		<pays>Allemagne</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Emile Zola" naissance="1840" deces="1902">
+		<image src="Zola.jpg"/>
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Henri Jeanson" naissance="1900" deces="1970">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jules Michelet" naissance="1798" deces="1874">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Gustave Flaubert" naissance="1821" deces="1880">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Boris Vian" naissance="" deces="">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Marcel Proust" naissance="1871" deces="1922">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Oscar Wilde" naissance="1854" deces="1900">
+		<pays>Irlande</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jacques Lacan" naissance="1901" deces="1981">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Léon-Paul Fargue" naissance="1876" deces="1947">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Novalis" naissance="1772" deces="1801">
+		<pays>Allemagne</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Pierre de Coubertin" naissance="1863" deces="1937">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Paul Claudel" naissance="1868" deces="1955">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jean Rostand" naissance="1894" deces="1977">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Sénèque" naissance="-4" deces="65">
+		<pays>Empire Romain</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Joseph Joubert" naissance="1754" deces="1824">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Denis Diderot" naissance="1713" deces="1784">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Jean Cocteau" naissance="1889" deces="1963">
+		<pays>France</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Nicolas Machiavel" naissance="1469" deces="1527">
+		<pays>Italie</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="Friedrich Nietzsche" naissance="1844" deces="1900">
+		<pays>Allemagne</pays>
+		<biographie/>
+	</auteur>
+	<auteur nom="André Gide" naissance="1869" deces="1951">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="François de La Rochefoucauld" niassance="1613" deces="1680">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Charles-Augustin Sainte-Beuve" naissance="1804" deces="1869">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Saint Augustin" naissance="354" deces="430">
+		<pays>Algérie</pays>
+	</auteur>
+	<auteur nom="Aristote" naissance="-384" deces="-322">
+		<pays>Grèce</pays>
+	</auteur>
+	<auteur nom="Alfred Knopf" naissance="1892" deces="1984">
+		<pays>Etats-Unis</pays>
+	</auteur>
+	<auteur nom="Thucydide" naissance="-450" deces="-395">
+		<pays>Grèce</pays>
+	</auteur>
+	<auteur nom="Louis Guilloux" naissance="1899" deces="1980">
+		<pays>France</pays>
+	</auteur>
+	<auteur nom="Warren Buffett" naissance="1930">
+		<pays>Etats-Unis</pays>
+	</auteur>
+</auteurs>

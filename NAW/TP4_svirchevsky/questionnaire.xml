@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE questionnaires SYSTEM "questionnaire.dtd">
+<questionnaires>
+	<questionnaire niveau="debutant">
+		<titre>Questionnaire n°1</titre>
+			<question>
+				<enonce>À quelle classe animale le scorpion appartient-il ?</enonce>
+				<reponse id="q1r1" score="0">Aux mammifères</reponse>
+				<reponse id="q1r2" score="0">Aux reptiles</reponse>
+				<reponse id="q1r3" score="16">Aux arachnides</reponse>
+				<reponse id="q1r4" score="0">Aux insectes</reponse>
+			</question>
+			<question>
+				<enonce>Quelle est la race du chien de Columbo ?</enonce>
+				<reponse id="q2r1" score="18">Basset</reponse>
+				<reponse id="q2r2" score="0">Beagle</reponse>
+				<reponse id="q2r3" score="0">Barbet</reponse>
+				<reponse id="q2r4" score="0">Bichon</reponse>
+			</question>
+	</questionnaire>
+</questionnaires>

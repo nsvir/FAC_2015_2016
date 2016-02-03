@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT questionnaires (questionnaire+) >
+<!ELEMENT questionnaire (titre, question+) >
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT question (enonce, reponse+) >
+<!ELEMENT enonce (#PCDATA) >
+<!ELEMENT reponse (#PCDATA) >
+
+<!ATTLIST questionnaire niveau (debutant|expert) #REQUIRED>
+<!ATTLIST reponse id ID #REQUIRED score CDATA #REQUIRED>
