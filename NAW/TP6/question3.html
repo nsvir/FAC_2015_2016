@@ -1,0 +1,19 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+    <input type="button" value="Creer un tableau" onclick="boucle()">
+  </body>
+
+  <script>
+    function boucle() {
+    var length = prompt("Taille du tableau");
+    var tab = [];
+    for (i = 0; i < length; i++) {
+	tab[i] = i * i;
+    }
+	alert(tab);
+   }
+  </script>
+</html>

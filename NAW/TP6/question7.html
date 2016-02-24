@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style type="text/css">
+    table {
+	border-collapse:collapse;
+    }
+td {
+    border:1px solid black;
+    min-width:30px;
+    height:30px;
+}
+
+    .free {
+    background-color:white
+    }
+
+    .used {
+    background-color:black
+    }
+
+</style>
+</head>
+
+  <body>
+    <table id="echequier">
+    </table>
+  </body>
+
+<script type="text/javascript">
+  cavalier = "-1";
+
+function moveTo(cell) {
+	  cell.className="used";
+	  cavalier = cell.id;
+}
+
+  function click(cell) {
+      var row = cell.id[0];
+      var col = cell.id[1];
+      
+      var cavx = cavalier[0];
+      var cavy = cavalier[1];
+
+      offsetx = Math.abs(row - cavx);
+      offsety = Math.abs(col - cavy);
+      if (cavalier == "-1"
+	  || offsetx == 2 && offsety == 1
+	  || offsetx == 1 && offsety == 2) {
+	  moveTo(cell);
+      }
+  }
+
+var table = document.getElementById("echequier");
+    for (i = 0; i < 8; i++) {
+	var row = table.insertRow(i);
+	for (j = 0; j < 8; j++) {
+	    var cell = row.insertCell(j);
+			cell.id=i + "" + j;
+			cell.className="free";
+	    cell.onclick=function() { click(this); }
+	}
+  }
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style type="text/css">
+    table {
+	border-collapse:collapse;
+    }
+td {
+    border:1px solid black;
+    min-width:30px;
+    height:30px;
+}
+
+
+</style>
+</head>
+
+  <body>
+    <table id="echequier">
+    </table>
+  </body>
+
+<script type="text/javascript">
+function click(cell) {
+    var row = cell.id[0];
+    var col = cell.id[1];
+    alert("row:" + row + " col:" + col);
+}
+
+var table = document.getElementById("echequier");
+    for (i = 0; i < 8; i++) {
+	var row = table.insertRow(i);
+	for (j = 0; j < 8; j++) {
+	    var cell = row.insertCell(j);
+	    cell.id=i + "" + j;
+	    cell.onclick=function() { click(this); }
+	}
+  }
+
+</script>
+</html>

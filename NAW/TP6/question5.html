@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Essai DHTML</title>
+    <script type="text/javascript">
+      function ajout() {
+	  var content = document.getElementById("course");
+	  var list = document.getElementById("listecommissions");
+	  list.innerHTML += "<li>" + content.value + "</li>";
+      }
+
+      function supprime() {
+	  var list = document.getElementById("listecommissions");
+	  var index = list.innerHTML.lastIndexOf("<li>");
+	  var newList = list.innerHTML.substring(0, index);
+	  list.innerHTML = newList;
+      }
+    </script>
+  </head>
+  <body>
+  <input type="text" id="course"/>
+  <input type="button" value="AJOUTER" onClick="ajout()"/>
+  <input type="button" value="SUPPRIMER" onClick="supprime()"/>
+  <ul id="listecommissions">
+    <li>1kg de farine</li>
+    <li>un pack de lait</li>
+  </ul>
+</body>
+</html>
