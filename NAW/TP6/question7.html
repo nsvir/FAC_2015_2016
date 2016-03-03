@@ -1,65 +1,144 @@
 <html>
-  <head>
-    <style type="text/css">
+<head>
+  <style type="text/css">
     table {
-	border-collapse:collapse;
-    }
-td {
-    border:1px solid black;
-    min-width:30px;
-    height:30px;
-}
-
-    .free {
-    background-color:white
+      border-collapse:collapse;
+      float:right;
     }
 
-    .used {
-    background-color:black
+    td {
+      border:1px solid black;
+      min-width:30px;
+      height:30px;
     }
 
-</style>
+
+    .ref {
+      text-align:center;
+      border:none;
+    }
+
+    #container {
+      width:800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #informations {
+      float: left;
+    }
+
+  </style>
 </head>
 
-  <body>
-    <table id="echequier">
-    </table>
-  </body>
+<body>
+  <div id="container">
+    <input type="button" value="backHorceRider" onclick="backward()">
+    <table id="echequier"/>
+    <div id="informations">
+      <ul id="moves"/>
+    </div>
+  </div>
+</body>
 
 <script type="text/javascript">
   cavalier = "-1";
+  lastImage = null;
+  moves = new Array();
 
-function moveTo(cell) {
-	  cell.className="used";
-	  cavalier = cell.id;
+  function updateList() {
+    list = document.getElementById("moves");
+    while (list.firstChild) {
+      list.removeChild(list.firstChild);
+    }
+   for (i = 0; i < moves.length; i++) {
+      elem = document.createElement("li");
+      elem.innerHTML = String.fromCharCode(65 - 48 + moves[i].id.charCodeAt(1)).concat(moves[i].id[0] - 1);
+      list.appendChild(elem);
+    }
+  }
+
+  function backward(cell) {
+      cell = moves.pop();
+    cell.className = "free";
+    lastImage.style.visibility = "hidden";
+    lastImage = null;
+    if (moves.length == 0) {
+     cavalier = "-1";
+   } else {
+     cell = moves.pop();
+     cell.className = "free";
+     moveTo(cell);
+   }
+   updateList();
+ }
+
+ function moveTo(cell) {
+  if (cell.className != "used")
+  {
+   if (lastImage != null) {
+     lastImage.style.opacity='0.3';
+   }
+   moves.push(cell);
+   lastImage = cell.firstChild;
+   lastImage.style.visibility = 'visible';
+   lastImage.style.opacity = '1';
+   cell.className = "used";
+   cavalier = cell.id;
+   updateList();
+ }
 }
 
-  function click(cell) {
-      var row = cell.id[0];
-      var col = cell.id[1];
-      
-      var cavx = cavalier[0];
-      var cavy = cavalier[1];
+function click(cell) {
+  var row = cell.id[0];
+  var col = cell.id[1];
 
-      offsetx = Math.abs(row - cavx);
-      offsety = Math.abs(col - cavy);
-      if (cavalier == "-1"
-	  || offsetx == 2 && offsety == 1
-	  || offsetx == 1 && offsety == 2) {
-	  moveTo(cell);
-      }
-  }
+  var cavx = cavalier[0];
+  var cavy = cavalier[1];
+
+  offsetx = Math.abs(row - cavx);
+  offsety = Math.abs(col - cavy);
+  if (cavalier == "-1"
+   || offsetx == 2 && offsety == 1
+   || offsetx == 1 && offsety == 2) {
+
+   moveTo(cell);
+}
+}
 
 var table = document.getElementById("echequier");
-    for (i = 0; i < 8; i++) {
+var row = table.insertRow(0);
+
+for (i = 0; i < 8; i++) {
+  cell = row.insertCell(i);
+  cell.className = "ref";
+  cell.innerHTML = String.fromCharCode(65 + i);
+}
+
+row.insertCell(8).className = "ref";
+
+for (i = 1; i < 9; i++) {
 	var row = table.insertRow(i);
 	for (j = 0; j < 8; j++) {
-	    var cell = row.insertCell(j);
-			cell.id=i + "" + j;
-			cell.className="free";
-	    cell.onclick=function() { click(this); }
-	}
+   var cell = row.insertCell(j);
+   cell.id=i + "" + j;
+   if ((i + j) % 2 == 0) {
+    cell.style.backgroundColor="white";
+  } else {
+    cell.style.backgroundColor="black";
   }
+  var oImg=document.createElement("img");
+  oImg.setAttribute('id', 'img');
+  oImg.setAttribute('src', './cb.png');
+  oImg.setAttribute('alt', 'na');
+  oImg.style.visibility = 'hidden';
+  cell.appendChild(oImg);
+  cell.onclick=function() { click(this); }
+}
+cell = row.insertCell(8);
+cell.className = "ref";
+cell.innerHTML = i - 1;
+}
 
-</script>
+  </script>
 </html>

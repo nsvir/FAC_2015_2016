@@ -1,8 +1,15 @@
-data Arbre c v = Empty | Node c v (Arbre c v) (Arbre c v)
+type TreeContent x y = (x, y)
+
+data GenericTree c v = Empty | Node (TreeContent c v) (GenericTree c v) (GenericTree c v)
      deriving (Show)
 
-simpleTree :: Arbre String String
-simpleTree = Node "rouge" "a"
-                  (Node "vert" "b" Empty Empty)
-                  (Node "bleu" "c" Empty
+type Arbre = GenericTree String String
+     
+simpleTree :: Arbre
+simpleTree = Node (TreeContent "rouge" "a")
+                  (Node (TreeContent "bleu" "c") Empty
                                    (Node "orange" "d" Empty Empty))
+
+mapArbre :: (ConsVal -> ConsVal) -> Arbre -> Arbre
+mapArbre f Empty = Empty
+mapArbre f tree@(Node content left right) = Node (f content) (mapArbre left) (mapArber right)
